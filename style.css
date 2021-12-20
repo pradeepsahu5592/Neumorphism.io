@@ -34,7 +34,7 @@ font-family: 'Source Sans Pro', sans-serif;
     border-top-right-radius: 20px;
     display: grid;
     place-items: center;
-    background-color : #012b74;
+    background-color : #0c038f;
 }
 .container .box .shape{
     width: 100px;
