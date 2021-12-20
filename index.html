@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box">
+            <div id="shape" class="shape"></div>
+        </div>
+        <div class="generator">
+            Color : <input class="color" id="color" type="color" value="#012b74">
+            Size : <input type="range" id="size" min="10" max="180" value="104">
+            Radius : <input type="range" id="radius" min="0" max="50" value="50">
+            Distance :<input type="range" id="distance " min="0" max="50" value="2">
+            Blur : <input type="range" id="blur" min="0" max="100" value="4">
+        </div>
+        <div class="codeWindow">
+            <div id="codes"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

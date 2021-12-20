@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Source+Sans+3:wght@900&family=Source+Sans+Pro:wght@600&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(128, 128, 128);
+    display: grid;
+    place-items: center;
+    font-family: 'Jost', sans-serif;
+font-family: 'Source Sans 3', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+.container{
+    width: 300px;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+.container .box{
+    width: 100%;
+    height: 180px;
+    background: rgba(128, 128, 128,.3);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: grid;
+    place-items: center;
+    background-color : #012b74;
+}
+.container .box .shape{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    width : 104px; height : 104px;
+    box-shadow : 2px 2px 4px #00000078, -2px -2px 4px #FFFFFF26;
+}
+.container .generator{
+    width: 100%;
+    height: 200px;
+    background: rgba(128, 128, 128,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    
+    
+}
+.container .generator .color{
+    /* width: 100px;
+    height: 100px;
+    border-radius: 50%; */
+    cursor: pointer;
+}
+input[ type="color"]{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+input[ type="color"]::-webkit-color-swatch{
+    border-radius: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 5px rgba(0,0,0,.15);
+
+}
+input[ type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 18px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255,.3);
+}
+input[ type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #001F3F;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255,.3);
+    box-shadow: -300px 0 0 292px #001F3F;
+
+}
+
+.container .codeWindow{
+    width: 100%;
+    height: 100px;
+    background: rgb(88, 88, 88,.8);
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+#copy{
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: rgb(128, 128, 128);
+    display:flex;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 3px;
+    margin-top: 5px;
+}
+#codes{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
